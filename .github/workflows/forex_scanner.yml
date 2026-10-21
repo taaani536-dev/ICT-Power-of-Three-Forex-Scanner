@@ -1,0 +1,82 @@
+name: Forex Scanner (ICT Power of Three, 1H)
+
+on:
+  schedule:
+    # Hourly at minute 07 UTC. GitHub may start scheduled runs LATE (minutes, sometimes much more)
+    # and may skip runs under load. The scanner is built for that: it advances its state by candle
+    # timestamps and re-checks the previous 7 closed candles.
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to run"
+        type: choice
+        default: dry-run
+        options:
+          - dry-run        # fetch + evaluate, NO Telegram, no signal/checkpoint changes
+          - scan           # live scan, sends Telegram alerts
+          - diagnose       # verify the 28 symbols on your Twelve Data plan (~29 credits)
+          - telegram-test  # sends one test message
+          - validate-config
+
+permissions:
+  contents: write          # needed to push the 'scanner-state' branch
+
+# One run at a time: prevents two runs from racing on the state file.
+concurrency:
+  group: forex-scanner
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.12"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      STATE_PATH: .state/state.json
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install pinned dependencies
+        run: pip install -r requirements.txt
+
+      - name: Prepare persistent state branch
+        id: prepare
+        run: bash scripts/state_branch.sh prepare
+
+      - name: Run scanner
+        id: run
+        timeout-minutes: 35
+        env:
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'scan' }}
+        run: |
+          case "$MODE" in
+            scan)            python main.py scan ;;
+            dry-run)         python main.py scan --dry-run ;;
+            diagnose)        python main.py diagnose ;;
+            telegram-test)   python main.py telegram-test ;;
+            validate-config) python main.py validate-config ;;
+            *) echo "Unknown mode: $MODE"; exit 2 ;;
+          esac
+
+      # Always persist state (even if the scanner step failed or timed out) so that checkpoints and
+      # the delivery ledger of already-sent messages are not lost.
+      - name: Persist state
+        if: always() && steps.prepare.outcome == 'success'
+        run: bash scripts/state_branch.sh persist

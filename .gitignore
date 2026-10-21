@@ -1,0 +1,23 @@
+# secrets / local config
+.env
+*.env
+!.env.example
+
+# state worktree used by GitHub Actions (lives on the 'scanner-state' branch)
+.state/
+state/
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# editors / OS
+.idea/
+.vscode/
+.DS_Store
