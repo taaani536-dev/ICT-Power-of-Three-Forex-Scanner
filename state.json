@@ -1,6 +1,6 @@
 {
  "api_usage": {
-  "credits": 84,
+  "credits": 112,
   "date": "2026-11-05"
  },
  "schema_version": 1,
@@ -2000,6 +2000,41 @@
    "status": "sent",
    "symbol": "NZDCAD"
   },
+  "po3flux-v5|NZDCAD|1H|20261105T0300Z|SELL": {
+   "attempts": 0,
+   "candle_ts": "2026-11-05T03:00:00Z",
+   "detected_at": "2026-11-05T05:00:19Z",
+   "direction": "SELL",
+   "id": "po3flux-v5|NZDCAD|1H|20261105T0300Z|SELL",
+   "last_error": null,
+   "message_id": 78,
+   "sent_at": "2026-11-05T05:03:26Z",
+   "signal": {
+    "candle_ts": "2026-11-05T03:00:00Z",
+    "candles_ago": 0,
+    "detected_at": "2026-11-05T05:00:19Z",
+    "direction": "SELL",
+    "entry": 0.78867,
+    "id": "po3flux-v5|NZDCAD|1H|20261105T0300Z|SELL",
+    "status": "OPEN",
+    "status_ts": null,
+    "stop_loss": 0.7952076119878166,
+    "strategy": "ICT Power of Three | Flux Charts",
+    "symbol": "NZDCAD",
+    "take_profit": 0.7830476536904777,
+    "timeframe": "1H",
+    "values": {
+     "accumulation_bottom": 0.7802483651882574,
+     "accumulation_top": 0.7878316348117426,
+     "atr": 0.0013075223975633301,
+     "manipulation_bottom": 0.78676,
+     "manipulation_direction": "Bullish",
+     "manipulation_top": 0.78928
+    }
+   },
+   "status": "sent",
+   "symbol": "NZDCAD"
+  },
   "po3flux-v5|NZDCHF|1H|20261022T0000Z|SELL": {
    "attempts": 0,
    "candle_ts": "2026-10-22T00:00:00Z",
@@ -2635,7 +2670,7 @@
   "AUDCAD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 0.9783535639922585,
     "acc_end_bottom": 0.97776,
@@ -2661,12 +2696,12 @@
     "tp_target": 0.9843232463070829
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "AUDCHF": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -2692,12 +2727,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "AUDJPY": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -2723,12 +2758,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "AUDNZD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.2481581653756952,
     "acc_end_bottom": 1.24751,
@@ -2754,12 +2789,12 @@
     "tp_target": 1.2537147649977953
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "AUDUSD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 0.6991317716230956,
     "acc_end_bottom": 0.69877,
@@ -2785,12 +2820,12 @@
     "tp_target": 0.7029530917131115
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "CADCHF": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -2816,12 +2851,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "CADJPY": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 112.69045702412143,
     "acc_end_bottom": 113.32874,
@@ -2847,12 +2882,12 @@
     "tp_target": 112.94066343203639
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "CHFJPY": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -2878,12 +2913,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "EURAUD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.5767519435633222,
     "acc_end_bottom": 1.58633,
@@ -2909,12 +2944,12 @@
     "tp_target": 1.5854350822625851
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "EURCAD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.5466797621312636,
     "acc_end_bottom": 1.56096,
@@ -2940,12 +2975,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "EURCHF": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 0.9139656410466299,
     "acc_end_bottom": 0.91307,
@@ -2971,17 +3006,17 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "EURGBP": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 0.8284091038890353,
     "acc_end_bottom": null,
     "acc_end_top": null,
-    "acc_end_ts": "2026-11-05T02:00:00Z",
+    "acc_end_ts": "2026-11-05T03:00:00Z",
     "acc_start_ts": "2026-10-30T06:00:00Z",
     "acc_top": 0.8427208961109647,
     "entry_atr": null,
@@ -3002,12 +3037,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "EURJPY": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 174.88472840749037,
     "acc_end_bottom": 175.57386,
@@ -3033,12 +3068,12 @@
     "tp_target": 175.96668125645886
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "EURNZD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.9837425581544657,
     "acc_end_bottom": 2.00274,
@@ -3050,26 +3085,26 @@
     "entry_price": 2.00893,
     "entry_ts": "2026-11-04T02:00:00Z",
     "entry_type": "Short",
-    "exit_price": null,
-    "exit_ts": null,
+    "exit_price": 1.9909121640816263,
+    "exit_ts": "2026-11-05T03:00:00Z",
     "manip_bottom": 2.00274,
     "manip_direction": "Bullish",
     "manip_end_ts": "2026-11-04T02:00:00Z",
     "manip_start_ts": "2026-11-03T23:00:00Z",
     "manip_top": 2.00961,
-    "outcome": null,
+    "outcome": "Take Profit",
     "sl_target": 2.0298809719981086,
     "start_ts": "2026-11-03T22:00:00Z",
-    "state": "Entry Taken",
+    "state": "Done",
     "tp_target": 1.9909121640816263
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "EURUSD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.110997181829084,
     "acc_end_bottom": 1.11395,
@@ -3095,12 +3130,12 @@
     "tp_target": 1.115777662172281
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "GBPAUD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -3126,12 +3161,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "GBPCAD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.8647705574958735,
     "acc_end_bottom": 1.87594,
@@ -3157,12 +3192,12 @@
     "tp_target": 1.871087625700741
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "GBPCHF": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.0999895911860822,
     "acc_end_bottom": 1.09978,
@@ -3188,12 +3223,12 @@
     "tp_target": 1.1046016556065699
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "GBPJPY": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -3219,43 +3254,43 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "GBPNZD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
-    "acc_bottom": 2.3753724449926517,
-    "acc_end_bottom": 2.39032,
-    "acc_end_top": 2.40293,
-    "acc_end_ts": "2026-11-03T20:00:00Z",
-    "acc_start_ts": "2026-11-01T21:00:00Z",
-    "acc_top": 2.3935475550073484,
-    "entry_atr": 0.0032654134275920854,
-    "entry_price": 2.40279,
-    "entry_ts": "2026-11-03T21:00:00Z",
-    "entry_type": "Short",
-    "exit_price": 2.388748722261354,
-    "exit_ts": "2026-11-05T02:00:00Z",
-    "manip_bottom": 2.39032,
-    "manip_direction": "Bullish",
-    "manip_end_ts": "2026-11-03T21:00:00Z",
-    "manip_start_ts": "2026-11-03T20:00:00Z",
-    "manip_top": 2.40293,
-    "outcome": "Take Profit",
-    "sl_target": 2.4191170671379605,
-    "start_ts": "2026-10-31T15:00:00Z",
-    "state": "Done",
-    "tp_target": 2.388748722261354
+    "acc_bottom": null,
+    "acc_end_bottom": null,
+    "acc_end_top": null,
+    "acc_end_ts": null,
+    "acc_start_ts": null,
+    "acc_top": null,
+    "entry_atr": null,
+    "entry_price": null,
+    "entry_ts": null,
+    "entry_type": null,
+    "exit_price": null,
+    "exit_ts": null,
+    "manip_bottom": null,
+    "manip_direction": null,
+    "manip_end_ts": null,
+    "manip_start_ts": null,
+    "manip_top": null,
+    "outcome": null,
+    "sl_target": null,
+    "start_ts": "2026-11-05T03:00:00Z",
+    "state": "Waiting For Accumulation",
+    "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "GBPUSD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.3386565577786584,
     "acc_end_bottom": 1.34358,
@@ -3281,12 +3316,12 @@
     "tp_target": 1.3409644840526307
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "NZDCAD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 0.7802483651882574,
     "acc_end_bottom": 0.78676,
@@ -3294,30 +3329,30 @@
     "acc_end_ts": "2026-11-05T01:00:00Z",
     "acc_start_ts": "2026-11-02T14:00:00Z",
     "acc_top": 0.7878316348117426,
-    "entry_atr": null,
-    "entry_price": null,
-    "entry_ts": null,
-    "entry_type": null,
+    "entry_atr": 0.0013075223975633301,
+    "entry_price": 0.78867,
+    "entry_ts": "2026-11-05T03:00:00Z",
+    "entry_type": "Short",
     "exit_price": null,
     "exit_ts": null,
-    "manip_bottom": null,
-    "manip_direction": null,
-    "manip_end_ts": null,
-    "manip_start_ts": null,
-    "manip_top": null,
+    "manip_bottom": 0.78676,
+    "manip_direction": "Bullish",
+    "manip_end_ts": "2026-11-05T03:00:00Z",
+    "manip_start_ts": "2026-11-05T01:00:00Z",
+    "manip_top": 0.78928,
     "outcome": null,
-    "sl_target": null,
+    "sl_target": 0.7952076119878166,
     "start_ts": "2026-11-04T04:00:00Z",
-    "state": "Waiting For Manipulation",
-    "tp_target": null
+    "state": "Entry Taken",
+    "tp_target": 0.7830476536904777
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "NZDCHF": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -3343,12 +3378,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "NZDJPY": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -3374,12 +3409,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "NZDUSD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -3405,12 +3440,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "USDCAD": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": 1.3937992434158446,
     "acc_end_bottom": 1.40035,
@@ -3436,12 +3471,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "USDCHF": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -3467,12 +3502,12 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   },
   "USDJPY": {
    "consecutive_failures": 0,
    "initialized": true,
-   "last_processed_ts": "2026-11-05T02:00:00Z",
+   "last_processed_ts": "2026-11-05T03:00:00Z",
    "machine": {
     "acc_bottom": null,
     "acc_end_bottom": null,
@@ -3498,8 +3533,8 @@
     "tp_target": null
    },
    "mode": "incremental",
-   "updated_at": "2026-11-05T03:56:59Z"
+   "updated_at": "2026-11-05T05:00:19Z"
   }
  },
- "updated_at": "2026-11-05T03:56:59Z"
+ "updated_at": "2026-11-05T05:00:19Z"
 }
