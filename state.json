@@ -1,6 +1,6 @@
 {
  "api_usage": {
-  "credits": 364,
+  "credits": 400,
   "date": "2026-11-12"
  },
  "schema_version": 1,
@@ -4656,5 +4656,5 @@
    "updated_at": "2026-11-12T17:04:30Z"
   }
  },
- "updated_at": "2026-11-12T17:04:30Z"
+ "updated_at": "2026-11-12T17:56:50Z"
 }
